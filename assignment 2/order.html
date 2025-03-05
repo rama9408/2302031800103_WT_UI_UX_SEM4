@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary - Greenify</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .order-summary, .product-details, .payment-options, .price-details {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .order-summary {
+            width: 60%;
+        }
+        .product-details {
+            width: 30%;
+            text-align: center;
+        }
+        .product-details img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .price-details {
+            width: 30%;
+            padding: 20px;
+        }
+        .payment-options {
+            width: 60%;
+            padding: 20px;
+        }
+        .btn {
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ffb300;
+        }
+        .product img {
+            width: 150px; /* Set a smaller width for product images */
+            height: 150px; /* Set a smaller height for product images */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            width: 48%;
+        }
+        .shop-button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .shop-button:hover {
+            background-color: #ffb300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <p><strong>Deliver to:</strong></p>
+            <p><strong>Emily R</strong></p>
+            <p>Silver Oak University, S.g Highway, Lambda Pvt. Limited, Ahmedabad 382481</p>
+            <p>9876543212</p>
+            <button class="btn">Change</button>
+            <hr>
+            <!-- Section Title -->
+            <h2>Recommendation</h2>
+            <!-- Product Grid -->
+            <div class="products">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="https://t.ly/wxyeg" alt="Hemp backpack">
+                    <h3>Hemp backpack</h3>
+                    <p class="price">$39.00</p>
+                    <p class="stars">⭐ ⭐ ⭐ ⭐ ★ 1 review</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="product">
+                    <img src="https://t.ly/-Dgwj" alt="Vessels">
+                    <h3>Vessels</h3>
+                    <p class="price">$25.99</p>
+                    <p class="stars">⭐ ⭐ ⭐ ☆ ☆ 2 reviews</p>
+                </div>
+            </div>
+            <!-- Shop Products Button -->
+            <a href="products.html" class="shop-button">Shop more products</a>
+        </div>
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h2>Your cart</h2>
+            <img src="https://t.ly/UCDnl" alt="Organic Cotton Tote Bag">
+            <h3>Organic Cotton Tote Bag</h3>
+            <img src="https://t.ly/tENfl" alt="Organic Cotton T-Shirts">
+            <h3>Organic Cotton T-Shirts</h3>
+        </div>
+        <!-- Price Details Section -->
+        <div class="price-details">
+            <h3>Price Details</h3>
+            <p>Price (2 item): ₹1,999</p>
+            <p>Discount: -₹1,397</p>
+            <p>Platform Fee: ₹3</p>
+            <p>Delivery Charges: Free</p>
+            <hr>
+            <h2>Total Amount: ₹602</h2>
+            <p>You save ₹1,397 on this order</p>
+        </div>
+        <!-- Payment Options Section -->
+        <div class="payment-options">
+            <h3>Payment Options</h3>
+            <p>Complete payment in <strong>03:12</strong> minutes</p>
+            <form>
+                <input type="radio" name="payment" id="upi" value="upi">
+                <label for="upi">UPI</label><br>
+                <input type="radio" name="payment" id="net-banking" value="net-banking">
+                <label for="net-banking">Net Banking</label><br>
+                <input type="radio" name="payment" id="cod" value="cod">
+                <label for="cod">Cash on Delivery</label><br>
+                <input type="radio" name="payment" id="card" value="card">
+                <label for="card">Credit / Debit Card</label><br><br>
+                <a href="payment.html" class="btn">Pay Now</a>
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

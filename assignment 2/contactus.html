@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenify Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #f4f7f4;
+            color: rgb(8, 8, 8);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .logo {
+            width: 50px;
+        }
+        .header .title {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+        .blog-card {
+            background-color: rgb(17, 146, 60);
+            width: 300px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 300px;
+        }
+        .blog-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .read-more {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer .contact {
+            text-align: right;
+        }
+        .footer .social-icons img {
+            width: 24px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <a href="home.html">
+            <img src="https://t.ly/WOa05" alt="Greenify Logo" class="logo">
+        </a>
+        <div class="title">Blogs</div>
+    </div>
+    
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="https://t.ly/H3cSb" alt="Sustainable Living">
+            <h3>Embracing Sustainability</h3>
+            <p>The Power of Eco-Friendly Products at Greenify</p>
+            <button class="read-more">READ MORE</button>
+        </div>
+        <div class="blog-card">
+            <img src="https://t.ly/lN6SV" alt="Eco Living">
+            <h3>Sustainable Living Made Simple</h3>
+            <p>How Greenify Helps You Make a Difference</p>
+            <button class="read-more">READ MORE</button>
+        </div>
+        <div class="blog-card">
+            <img src="https://t.ly/g0OOB" alt="Eco Shopping">
+            <h3>Greenify’s Guide to Eco-Friendly Shopping</h3>
+            <p>Reducing Your Carbon Footprint One Purchase at a Time</p>
+            <button class="read-more">READ MORE</button>
+        </div>
+    </div>
+
+    <h2 >Contact Us</h2>
+    <div class="footer">
+        <div>
+            <div class="logo">Greenify</div>
+            <a href="home.html">
+                <img src="https://t.ly/WOa05" alt="Greenify Logo" class="logo">
+            </a>
+        </div>
+        <div class="social-icons">
+            <img src="https://t.ly/KkSZV" alt="Facebook">
+            <img src="https://t.ly/ghYDF" alt="Instagram">
+            <img src="https://t.ly/kVljH" alt="Twitter">
+        </div>
+        <div class="contact">
+            <p>+91 9876543212</p>
+            <p>greenifysupport@gmail.com</p>
+            <p>Address:</p>
+            <p>2JXF+H3M, Naroda Rd, Memco, D Colony, Ahmedabad, Gujarat 382345</p>
+        </div>
+    </div>
+    
+</body>
+</html>

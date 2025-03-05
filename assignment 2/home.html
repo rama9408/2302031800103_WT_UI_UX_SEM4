@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenify - Sustainable Shopping</title>
+    <style>
+        /* Resetting default margins */
+        body {
+            background: url('https://t.ly/aE38Q') no-repeat center center/cover; /* Set the background image */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 150px; /* Adjust logo size */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: green;
+        }
+
+        /* Search bar styling */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .search-bar img {
+            width: 16px;
+            cursor: pointer;
+        }
+
+        /* Hero section */
+        .hero {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: white;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .hero-text span {
+            color: green;
+            font-weight: bold;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .shop-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .shop-btn:hover {
+            background-color: darkgreen;
+        }
+
+        /* Hero Image Section */
+        .hero-image img {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Features section */
+        .features {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-box img {
+            width: 50px;
+        }
+
+        .feature-box h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="home.html">
+            <img src="https://t.ly/WOa05" alt="Greenify Logo" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="products.html">Categories-All</a></li>
+            <li><a href="categories_bags.html">Categories-Bags</a></li>
+            <li><a href="categories_bamboo.html">Categories-Bamboo</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products">
+            <img src="https://t.ly/GOkqa" alt="Search Icon">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Greenify</h1>
+            <h2>Your Sustainable <span>Shopping Destination</span></h2>
+            <p>"Discover Sustainability, Embrace Greenify. Your Eco-Friendly Haven for Conscious Shopping."</p>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://t.ly/Q5pAg" alt="Eco-friendly Bag">
+        </div>
+    </section>
+
+    <!-- Why Choose Greenify Section -->
+    <section class="features">
+        <h2>Why Choose Greenify?</h2>
+        <div class="features-container">
+            <!-- Feature 1 -->
+            <div class="feature-box">
+                <img src="https://t.ly/ARNoH" alt="Product Icon">
+                <h3>Sustainable Products</h3>
+                <p>Explore our carefully curated selection of eco-friendly products designed to reduce your carbon footprint.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-box">
+                <img src="https://shorturl.at/sWYl4" alt="Eco Choice Icon">
+                <h3>Eco-Friendly Choices</h3>
+                <p>Make conscious choices with our products that promote ethical sourcing and responsible manufacturing.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-box">
+                <img src="https://t.ly/EUK6H" alt="Quality Icon">
+                <h3>High-Quality Selection</h3>
+                <p>Invest in long-lasting, high-quality items that ensure your satisfaction and reduce waste.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-box">
+                <img src="https://t.ly/gRrHx" alt="Packaging Icon">
+                <h3>Sustainable Packaging</h3>
+                <p>We use sustainable packaging to ensure safe delivery while minimizing environmental impact.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

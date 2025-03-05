@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Greenify</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://media.istockphoto.com/id/507707260/photo/tea-plantation-in-india.jpg?s=612x612&w=0&k=20&c=UsNw75-q8MnNRFTC7pcQXPXsKSWr08RlsZc1owf_pYE=') no-repeat center center/cover; /* Set the background image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for sign-in form */
+        .container {
+            background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        /* Styling for the title */
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        /* Input field styling */
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Button styling */
+        .btn {
+            background-color: blue;
+            color: hsl(0, 3%, 76%);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            background-color: darkblue;
+        }
+
+        /* Sign-up link styling */
+        .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 120px; /* Adjust logo size */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo in the top left corner -->
+    
+        <img src="https://t.ly/WOa05" alt="Greenify Logo" class="logo">
+    
+    
+    
+    <!-- Sign-in form container -->
+    <div class="container">
+        <h1>Sign in Page</h1>
+
+        <!-- Username input -->
+        <input type="text" placeholder="Username" required>
+
+        <!-- Password input -->
+        <input type="password" placeholder="Password" required>
+
+        <!-- Sign-in button -->
+         <a href="home.html"><button class="btn">Sign in</button></a>
+        
+        <!-- Sign-up link -->
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up.</a></p>
+    </div>
+
+</body>
+</html>
